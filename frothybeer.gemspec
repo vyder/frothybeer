@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["vidur.murali@gmail.com"]
   gem.description   = %q{Finds beers and their attributes from BeerAdvocate}
   gem.summary       = %q{Gets ratings, styles, abv content, breweries, and other information from a beer's name}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/vyder/frothybeer"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
