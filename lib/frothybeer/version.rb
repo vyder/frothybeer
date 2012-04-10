@@ -1,3 +1,3 @@
-module Frothybeer
+module FrothyBeer
   VERSION = "0.0.1"
 end

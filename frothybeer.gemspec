@@ -4,8 +4,8 @@ require File.expand_path('../lib/frothybeer/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Vidur Murali"]
   gem.email         = ["vidur.murali@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Finds beers and their attributes from BeerAdvocate}
+  gem.summary       = %q{Gets ratings, styles, abv content, breweries, and other information from a beer's name}
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
@@ -13,5 +13,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = "frothybeer"
   gem.require_paths = ["lib"]
-  gem.version       = Frothybeer::VERSION
+  gem.version       = FrothyBeer::VERSION
+  
+  gem.add_runtime_dependency "bundler"
+  gem.add_runtime_dependency "hpricot"
 end
