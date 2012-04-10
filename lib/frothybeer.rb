@@ -30,8 +30,8 @@ module FrothyBeer
     if WebPage::hasResults?(resultsPage)
       results = WebPage::getResults(resultsPage)
     else
-      puts "No results" # TODO raise an exception
-      return
+      # TODO raise an exception
+      return []
     end
 
     # find the best match beers
