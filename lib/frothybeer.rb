@@ -65,7 +65,7 @@ module FrothyBeer
   
   # Methods to scrape the beer profile page.
   def self.scrapeName(page)
-    page.search("h1[@class='norm']").html
+    page.search("h1").html.split('<')[0]
   end
   
   def self.scrapeBrewery(page)
